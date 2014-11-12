@@ -1,0 +1,13 @@
+---
+# tasks file for hankkeet_visualisointi
+
+- name: Install git.
+  apt:
+    pkg=git
+    state=present
+
+- name: Deploy visualisointi_hankkeet from git.
+  git:
+    repo={{visualisointi_hankkeet_repo}}
+    dest={{visualisointi_hankkeet_site_dir}}
+    version=HEAD

@@ -1,0 +1,8 @@
+---
+# defaults file for hankkeet_visualisointi
+
+# workaround for ansible not exposing the roles_path variable
+roles_path: "{{role_path.rsplit('/', 1)|first}}"
+visualisointi_hankkeet_repo: git@projektit.kirjastot.fi:hankkeet_visualisointi.git
+visualisointi_sites_dir: "{{sites_dir}}/{{site_name}}/www"
+visualisointi_hankkeet_site_dir: "{{visualisointi_sites_dir}}/hankkeet"
