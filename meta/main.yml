@@ -118,7 +118,6 @@ galaxy_info:
   #- web
 dependencies:
   - role: apache_vhost
-    apache_vhost_webroot: "{{static_site_dir}}"
     # The next two are here because of apache_vhost brokenness.
     site_webroot: "{{static_site_dir}}"
     apache_vhost_robots_txt: apache_vhost/templates/allow_robots.txt.j2
