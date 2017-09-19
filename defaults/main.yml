@@ -4,3 +4,4 @@
 # workaround for ansible not exposing the roles_path variable
 roles_path: "{{role_path.rsplit('/', 1)|first}}"
 static_site_dir: "{{sites_dir}}/{{site_name}}/www"
+static_site_config: []

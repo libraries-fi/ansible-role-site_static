@@ -6,4 +6,4 @@
     repo: "{{ item.repo }}"
     dest: "{{ static_site_dir }}/{{ item.subdir|default('') }}"
     version: "{{ item.version|default('HEAD') }}"
-  with_items: static_site_config
+  with_items: "{{ static_site_config }}"
